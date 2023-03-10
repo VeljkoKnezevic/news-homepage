@@ -1,0 +1,30 @@
+@use "../utils" as u;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: u.rem(16);
+  padding-block-start: u.rem(28);
+
+  &__logo {
+    @include u.breakpoint-down(small) {
+      width: u.rem(45);
+    }
+  }
+
+  &__hamburger {
+    @include u.breakpoint(large) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include u.breakpoint(large) {
+      display: flex;
+      background-color: red;
+    }
+  }
+}

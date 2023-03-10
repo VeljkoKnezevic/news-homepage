@@ -1,0 +1,37 @@
+@use "../utils" as u;
+
+.hero {
+  padding-inline: u.rem(16);
+  padding-block-start: u.rem(32);
+
+  &__image {
+    display: block;
+    width: u.rem(343);
+    width: 100%;
+  }
+
+  &__heading {
+    margin-block-start: u.rem(24);
+    width: 90%;
+  }
+
+  &__para {
+    color: var(--gunmetal);
+    margin-block-start: u.rem(16);
+  }
+
+  &__button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: u.rem(14);
+    line-height: u.rem(24);
+    letter-spacing: u.rem(4.375);
+    color: var(--almost-white);
+    background-color: var(--light-vermillion);
+    border: none;
+    text-transform: uppercase;
+    padding: u.rem(13) u.rem(34) u.rem(11) u.rem(30);
+    margin-block-start: u.rem(25);
+  }
+}
