@@ -38,6 +38,11 @@ h3 {
   line-height: 1.5rem;
 }
 
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
 p {
   margin: 0;
   font-size: 0.9375rem;
@@ -116,6 +121,68 @@ a:active {
   text-transform: uppercase;
   padding: 0.8125rem 2.125rem 0.6875rem 1.875rem;
   margin-block-start: 1.5625rem;
+}
+
+.ranking {
+  margin-inline: 1rem;
+  margin-block-start: 4rem;
+  padding-block-end: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ranking__card {
+  display: flex;
+  gap: 1.5rem;
+}
+.ranking__card__image {
+  width: 6.25rem;
+}
+.ranking__card__number {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--silver);
+}
+.ranking__card__heading {
+  margin-block-start: 0.75rem;
+  color: var(--dark-space-blue);
+}
+.ranking__card__para {
+  margin-block-start: 0.5625rem;
+  color: var(--gunmetal);
+}
+
+.sidebar {
+  margin-inline: 1rem;
+  margin-block-start: 4rem;
+  background-color: var(--dark-space-blue);
+}
+.sidebar__content {
+  padding: 1.5rem 1.25rem 1.5rem 1.3125rem;
+}
+.sidebar__heading {
+  color: var(--yellow);
+}
+.sidebar__cards {
+  margin-block-start: 2.1875rem;
+}
+.sidebar__card + .sidebar__card {
+  border-block-start: 1px solid var(--gunmetal);
+  padding-block-start: 1.9375rem;
+}
+.sidebar__card {
+  padding-block-end: 1.8125rem;
+}
+.sidebar__card:last-child {
+  padding-block-end: 0;
+}
+.sidebar__card__heading {
+  color: var(--almost-white);
+}
+.sidebar__card__para {
+  color: var(--silver);
+  margin-block-start: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

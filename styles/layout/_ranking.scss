@@ -1,0 +1,36 @@
+@use "../utils" as u;
+
+.ranking {
+  margin-inline: u.rem(16);
+  margin-block-start: u.rem(64);
+  padding-block-end: u.rem(80);
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(32);
+
+  &__card {
+    display: flex;
+    gap: u.rem(24);
+
+    &__image {
+      width: u.rem(100);
+    }
+
+    &__number {
+      font-weight: 700;
+      font-size: u.rem(32);
+      line-height: u.rem(32);
+      color: var(--silver);
+    }
+
+    &__heading {
+      margin-block-start: u.rem(12);
+      color: var(--dark-space-blue);
+    }
+
+    &__para {
+      margin-block-start: u.rem(9);
+      color: var(--gunmetal);
+    }
+  }
+}

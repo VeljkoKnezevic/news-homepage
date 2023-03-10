@@ -1,0 +1,41 @@
+@use "../utils" as u;
+
+.sidebar {
+  margin-inline: u.rem(16);
+  margin-block-start: u.rem(64);
+  background-color: var(--dark-space-blue);
+
+  &__content {
+    padding: u.rem(24) u.rem(20) u.rem(24) u.rem(21);
+  }
+
+  &__heading {
+    color: var(--yellow);
+  }
+
+  &__cards {
+    margin-block-start: u.rem(35);
+  }
+
+  &__card + &__card {
+    border-block-start: 1px solid var(--gunmetal);
+    padding-block-start: u.rem(31);
+  }
+
+  &__card {
+    padding-block-end: u.rem(29);
+
+    &:last-child {
+      padding-block-end: 0;
+    }
+
+    &__heading {
+      color: var(--almost-white);
+    }
+
+    &__para {
+      color: var(--silver);
+      margin-block-start: u.rem(8);
+    }
+  }
+}
