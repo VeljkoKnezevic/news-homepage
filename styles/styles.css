@@ -24,27 +24,32 @@ h4 {
 }
 
 h1 {
+  font-weight: 800;
   font-size: clamp(2.5rem, 0.0625rem + 4vw, 3.5rem);
   line-height: clamp(2.5rem, 0.0625rem + 4vw, 3.5rem);
 }
 
 h2 {
+  font-weight: 700;
   font-size: clamp(2rem, 0.0625rem + 3vw, 2.5rem);
   line-height: clamp(2rem, 0.0625rem + 3vw, 2.5rem);
 }
 
 h3 {
+  font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
 h4 {
+  font-weight: 800;
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
 
 p {
   margin: 0;
+  font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.625rem;
 }
@@ -52,6 +57,7 @@ p {
 a,
 a:visited,
 a:active {
+  font-weight: 400;
   text-decoration: none;
 }
 
