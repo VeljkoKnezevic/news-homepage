@@ -7,6 +7,13 @@
   padding-inline: u.rem(16);
   padding-block-start: u.rem(28);
 
+  @include u.breakpoint(xlarge) {
+    padding-inline: u.rem(165);
+    padding-block-start: u.rem(89);
+    max-width: u.rem(1440);
+    margin: 0 auto;
+  }
+
   &__logo {
     @include u.breakpoint-down(small) {
       width: u.rem(45);
@@ -22,9 +29,13 @@
   &__nav {
     display: none;
 
+    &__element {
+      color: var(--gunmetal);
+    }
+
     @include u.breakpoint(large) {
       display: flex;
-      background-color: red;
+      gap: u.rem(40);
     }
   }
 }

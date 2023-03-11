@@ -1,0 +1,12 @@
+@use "../utils" as u;
+
+main {
+  @include u.breakpoint(xlarge) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: u.rem(165);
+    padding-block-start: u.rem(102);
+    max-width: u.rem(1440);
+    margin: 0 auto;
+  }
+}

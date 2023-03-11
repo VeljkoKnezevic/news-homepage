@@ -4,20 +4,45 @@
   padding-inline: u.rem(16);
   padding-block-start: u.rem(32);
 
+  @include u.breakpoint(xlarge) {
+    grid-column: 1 / 3;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline-end: u.rem(15);
+    column-gap: u.rem(30);
+  }
+
   &__image {
     display: block;
     width: u.rem(343);
-    width: 100%;
+    height: 100%;
+
+    @include u.breakpoint(xlarge) {
+      height: u.rem(300);
+      width: 100%;
+      src: url(../../assets/images/image-web-3-desktop.jpg);
+      grid-column: 1 / 3;
+    }
   }
 
   &__heading {
     margin-block-start: u.rem(24);
     width: 90%;
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: u.rem(28);
+      width: 100%;
+    }
   }
 
   &__para {
     color: var(--gunmetal);
     margin-block-start: u.rem(16);
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: u.rem(28);
+    }
   }
 
   &__button {
@@ -33,5 +58,9 @@
     text-transform: uppercase;
     padding: u.rem(13) u.rem(34) u.rem(11) u.rem(30);
     margin-block-start: u.rem(25);
+
+    @include u.breakpoint(xlarge) {
+      margin-block-start: u.rem(29);
+    }
   }
 }

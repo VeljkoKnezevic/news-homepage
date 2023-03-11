@@ -8,12 +8,27 @@
   flex-direction: column;
   gap: u.rem(32);
 
+  @include u.breakpoint(xlarge) {
+    flex-direction: row;
+    margin-block-start: u.rem(71);
+    padding-block-end: u.rem(100);
+    margin-inline: 0;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    gap: u.rem(30);
+  }
+
   &__card {
     display: flex;
     gap: u.rem(24);
 
+    @include u.breakpoint(xlarge) {
+      max-width: u.rem(350);
+    }
+
     &__image {
       width: u.rem(100);
+      height: u.rem(127);
     }
 
     &__number {
