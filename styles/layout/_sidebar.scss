@@ -40,6 +40,11 @@
 
     &__heading {
       color: var(--almost-white);
+
+      &:hover {
+        color: var(--yellow);
+        cursor: pointer;
+      }
     }
 
     &__para {

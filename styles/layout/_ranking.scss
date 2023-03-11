@@ -41,6 +41,11 @@
     &__heading {
       margin-block-start: u.rem(12);
       color: var(--dark-space-blue);
+
+      &:hover {
+        color: var(--light-vermillion);
+        cursor: pointer;
+      }
     }
 
     &__para {

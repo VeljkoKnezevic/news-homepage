@@ -16,17 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="./app.js" defer></script>
 
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
+    <div id="background"></div>
     <header class="header">
       <img src="./assets/images/logo.svg" alt="Logo" class="header__logo" />
-      <img
-        src="./assets/images/icon-menu.svg"
-        alt="Menu"
-        class="header__hamburger"
-      />
+      <button class="header__button">
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="Menu"
+          class="header__hamburger"
+        />
+      </button>
       <nav class="header__nav">
         <a class="header__nav__element">Home</a>
         <a class="header__nav__element">New</a>
@@ -38,11 +42,17 @@
 
     <main>
       <section class="hero">
-        <img
-          src="./assets/images/image-web-3-mobile.jpg"
-          alt="puzzle"
-          class="hero__image"
-        />
+        <picture class="hero__picture">
+          <source
+            media="(min-width: 90em)"
+            srcset="./assets/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="puzzle"
+            class="hero__image"
+          />
+        </picture>
         <h1 class="hero__heading">The Bright Future of Web 3.0?</h1>
         <div class="hero__para-and-button">
           <p class="hero__para">

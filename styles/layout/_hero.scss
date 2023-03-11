@@ -13,6 +13,12 @@
     column-gap: u.rem(30);
   }
 
+  &__picture {
+    height: u.rem(300);
+    width: 100%;
+    grid-column: 1 / 3;
+  }
+
   &__image {
     display: block;
     width: u.rem(343);
@@ -21,7 +27,6 @@
     @include u.breakpoint(xlarge) {
       height: u.rem(300);
       width: 100%;
-      src: url(../../assets/images/image-web-3-desktop.jpg);
       grid-column: 1 / 3;
     }
   }
@@ -58,6 +63,12 @@
     text-transform: uppercase;
     padding: u.rem(13) u.rem(34) u.rem(11) u.rem(30);
     margin-block-start: u.rem(25);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--almost-white);
+      background: var(--dark-space-blue);
+    }
 
     @include u.breakpoint(xlarge) {
       margin-block-start: u.rem(29);

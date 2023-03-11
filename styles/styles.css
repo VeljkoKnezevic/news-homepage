@@ -66,6 +66,14 @@ a:active {
   --light-vermillion: #f15d51;
 }
 
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 26, 0.5);
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -86,22 +94,56 @@ a:active {
     width: 2.8125rem;
   }
 }
+.header__button {
+  background: none;
+  border: none;
+}
+@media (min-width: 56.25em) {
+  .header__button {
+    display: none;
+  }
+}
+.header__hamburger {
+  position: relative;
+  z-index: 1;
+}
 @media (min-width: 56.25em) {
   .header__hamburger {
     display: none;
   }
 }
 .header__nav {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+@media (max-width: 56.24875em) {
+  .header__nav {
+    display: none;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    background-color: var(--almost-white);
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 9rem 9.6875rem 19.3125rem 1.5rem;
+    gap: 1.5rem;
+  }
 }
 .header__nav__element {
-  color: var(--gunmetal);
+  color: var(--dark-space-blue);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 @media (min-width: 56.25em) {
-  .header__nav {
-    display: flex;
-    gap: 2.5rem;
+  .header__nav__element {
+    color: var(--gunmetal);
   }
+}
+.header__nav__element:hover {
+  color: var(--light-vermillion);
+  cursor: pointer;
 }
 
 .hero {
@@ -118,6 +160,11 @@ a:active {
     column-gap: 1.875rem;
   }
 }
+.hero__picture {
+  height: 18.75rem;
+  width: 100%;
+  grid-column: 1/3;
+}
 .hero__image {
   display: block;
   width: 21.4375rem;
@@ -127,7 +174,6 @@ a:active {
   .hero__image {
     height: 18.75rem;
     width: 100%;
-    src: url(../../assets/images/image-web-3-desktop.jpg);
     grid-column: 1/3;
   }
 }
@@ -163,6 +209,11 @@ a:active {
   text-transform: uppercase;
   padding: 0.8125rem 2.125rem 0.6875rem 1.875rem;
   margin-block-start: 1.5625rem;
+}
+.hero__button:hover {
+  cursor: pointer;
+  color: var(--almost-white);
+  background: var(--dark-space-blue);
 }
 @media (min-width: 90em) {
   .hero__button {
@@ -212,6 +263,10 @@ a:active {
   margin-block-start: 0.75rem;
   color: var(--dark-space-blue);
 }
+.ranking__card__heading:hover {
+  color: var(--light-vermillion);
+  cursor: pointer;
+}
 .ranking__card__para {
   margin-block-start: 0.5625rem;
   color: var(--gunmetal);
@@ -254,6 +309,10 @@ a:active {
 }
 .sidebar__card__heading {
   color: var(--almost-white);
+}
+.sidebar__card__heading:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 .sidebar__card__para {
   color: var(--silver);
