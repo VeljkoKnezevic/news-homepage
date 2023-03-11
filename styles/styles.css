@@ -53,8 +53,6 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  font-size: 0.9375rem;
-  line-height: 1.625rem;
 }
 
 :root {
@@ -139,6 +137,8 @@ a:active {
 @media (min-width: 56.25em) {
   .header__nav__element {
     color: var(--gunmetal);
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
   }
 }
 .header__nav__element:hover {
@@ -324,7 +324,7 @@ a:active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-inline: 10.3125rem;
-    padding-block-start: 6.375rem;
+    padding-block-start: 3.4375rem;
     max-width: 90rem;
     margin: 0 auto;
   }

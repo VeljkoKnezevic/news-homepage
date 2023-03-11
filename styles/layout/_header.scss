@@ -71,6 +71,8 @@
 
       @include u.breakpoint(large) {
         color: var(--gunmetal);
+        font-size: u.rem(15);
+        line-height: u.rem(26);
       }
       &:hover {
         color: var(--light-vermillion);
